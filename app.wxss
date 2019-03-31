@@ -1,0 +1,33 @@
+/**app.wxss**/
+/**********************************************/
+/* 字体颜色 */
+/*.black {
+  color: #000;
+}
+
+.semi {
+  color: #353535;
+}
+
+.grey {
+  color: #888;
+}
+
+.light-grey {
+  color: #b2b2b2;
+}*/
+
+/*top,height由页面变量设置*/
+.main {
+  position: absolute;
+  /*top: 56px;*/  /* 脚本动态设置 */
+  left: 0;
+  right: 0;
+  overflow-x: hidden; /* 总体设置不能横向滚动 */
+  /*height: 560px;*/  /* 脚本动态设置 */
+  color: #000;
+  font-size: 22rpx;
+  line-height: 2;
+  /*text-align: center;*/
+  background-color: lightcyan;
+}

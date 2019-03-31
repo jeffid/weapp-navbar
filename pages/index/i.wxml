@@ -1,0 +1,7 @@
+<!--pages/index/i.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
+<view class="main" style="top:{{contentTop}}px;height: {{contentHeight}}px;">
+  这是首页
+  <navigator url="../second/i"><button>跳转到子页面</button></navigator>
+</view>

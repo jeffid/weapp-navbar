@@ -1,0 +1,17 @@
+{
+  "debug": true,
+  "pages": [
+    "pages/index/i",
+    "pages/second/i"
+  ],
+  "usingComponents": {
+    "nav-bar": "/components/navbar/index"
+  },
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,38 @@
+<view class="nav-wrap" style="padding-top:{{navbarTop}}px;">
+  
+  <!--  整个左上角导航组件在首页时不显示 -->
+  <view
+      wx:if="{{navbarData.showCapsule}}"
+      class="nav-capsule"
+  >
+    <!-- 返回上一页按钮 -->
+    <!-- 从分享进入小程序时 返回上一级按钮不应该存在-->
+    <view
+        wx:if="{{!isFromShare}}"
+        bindtap="_onNavBack"
+        class="icon-back back-pre"
+    ></view>
+    <!-- 分隔线 -->
+    <view
+        wx:if="{{!isFromShare}}"
+        class="navbar-v-line">
+    </view>
+    <!-- 主页按钮 -->
+    <view
+        bindtap="_onBackHome"
+        class="icon-home back-home"
+    ></view>
+  
+  </view>
+  
+  
+  <!-- 导航栏 中间的标题 -->
+  <view
+      bindtap="_onClickTitle"
+      class="nav-title"
+      style="top:{{navbarTop}}px;"
+  >
+    {{navbarData.title}}
+  </view>
+
+</view>

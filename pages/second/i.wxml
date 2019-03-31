@@ -1,0 +1,6 @@
+<!--pages/second/i.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
+<view class="main" style="top:{{contentTop}}px;height: {{contentHeight}}px;">
+  这是子页面
+</view>

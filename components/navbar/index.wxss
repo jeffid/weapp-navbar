@@ -1,0 +1,67 @@
+.icon-home {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyBjbGFzcz0iaWNvbiIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjQuMDBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM3MDcwNzAiIGQ9Ik04MzIgNTEydjM4NGE2NCA2NCAwIDAgMS02NCA2NEgyNTZhNjQgNjQgMCAwIDEtNjQtNjRWNTEySDc3LjI0OGEzMiAzMiAwIDAgMS0yMi41OTItNTQuNjU2TDQ2Ni43NTIgNDUuMjQ4YTY0IDY0IDAgMCAxIDkwLjQ5NiAwbDQxMi4xNiA0MTIuMTZhMzIgMzIgMCAwIDEtMjIuNjU2IDU0LjU5Mkg4MzJ6IG0tMjU2IDMyMGgxMjhWMzg0TDUxMiAxOTIgMzIwIDM4NHY0NDhoMTI4di0xOTJoMTI4djE5MnoiICAvPjwvc3ZnPg==");
+}
+
+.icon-back {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyBjbGFzcz0iaWNvbiIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjQuMDBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM3MDcwNzAiIGQ9Ik0yMTkuMTU5NDQyIDUxMiA3MTEuMTMxMjkzIDIwLjAyODE0OSA4MDQuODQwNTU4IDExMy43Mzc0MTQgNDA2LjU3Njk0OSA1MTIgODA0Ljg0MDU1OCA5MTAuMjYyNTg2IDcxMS4xMzEyOTMgMTAwMy45NzE4NTEgNTY2LjQ2ODU0MiA4NTkuMzA5MVoiIC8+PC9zdmc+");
+}
+
+/* components/navbar/index./* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+  /*width: 100%;*/
+  height: 34px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+/* 标题 */
+.nav-title {
+  position: absolute;
+  /*top: 0;*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #2c2b2b;
+  /*font: 500 36rpx/80rpx;*/
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px; /*同.nav-wrap高度*/
+}
+
+.nav-capsule {
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  margin-left: 15px;
+}
+/*垂直分隔线*/
+.navbar-v-line {
+  width: 0.5px;
+  height: 50%;
+  background-color: #e5e5e5;
+}
+
+.back-pre,
+.back-home {
+  width: 18px;
+  height: 18px;
+  /*padding: 10rpx;*/
+  /*margin-top: 4rpx;*/
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
