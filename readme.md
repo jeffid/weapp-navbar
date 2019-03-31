@@ -5,6 +5,16 @@
 * 点击标题可触发`clickTitle`事件
 
 ## 使用
+本仓库是一个使用该自定义导航的demo,整个下载并在**微信开发者工具**中打开运行即可查看.
+
+引入自己项目的方式是把`components/navbar`目录复制到你的项目下,并按下面配置.
+app.json
+```json
+  "usingComponents": {
+    "nav-bar": "/components/navbar/index"
+  },
+```
+
 页面wxml
 ```wxml
 <nav-bar navbar-data="{{navbarData}}" bind:clickTitle="onClickTitle"></nav-bar>
@@ -46,18 +56,18 @@ onLaunch(options) {
 ```
 
 ## 线上项目示例
-### **砖头时间**
+### **砖头时间**--献给正在建筑梦想的你
 ![image](./navbar-screenshot/briclock_release_black_1m.jpg)
 
 #### 5.5寸iphone
 首页
-![image](./navbar-screenshot/iphone_5.5inch_index.png)
+![image](./navbar-screenshot/iphone_5.5inch_index.png@h200)
 子页
-![image](./navbar-screenshot/iphone_5.5inch.png)
+![image](./navbar-screenshot/iphone_5.5inch.png@h200)
 #### 9.7寸ipad
-![image](./navbar-screenshot/ipad_9.7inch.png)
+![image](./navbar-screenshot/ipad_9.7inch.png@h200)
 #### 5寸安卓机
-![image](./navbar-screenshot/android_5.0inch.png)
+![image](./navbar-screenshot/android_5.0inch.png@h200)
 
 ## 注意事项
 * 导航栏的大小(如高度)不应随屏幕大小的改变而改变,因此应避免使用`rpx`单位
